@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background-image: url(./images/cross.png), url(./images/circle.png),
+    url(./images/cross.png), url(./images/board.png);
+  background-repeat: no-repeat;
+  background-size: 150px, 150px, 150px, 600px;
+  background-position: center 25px, center 430px, center center, center center;
+}

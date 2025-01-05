@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Oswald", sans-serif;
+}
+
+/* Nawigacja */
+
+nav {
+  max-width: 1440px;
+  margin: 30px auto;
+  text-align: right;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #555;
+  padding: 10px;
+  margin: 0 20px;
+  transition: color 0.1s ease;
+}
+
+nav a:hover {
+  border-bottom: 3px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+nav a.reservation {
+  padding: 10px 30px;
+  border: 3px solid black;
+  color: black;
+  margin-right: 50px;
+  margin-left: 80px;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+nav a.reservation:hover {
+  background-color: royalblue;
+  color: white;
+  border-color: royalblue;
+  cursor: pointer;
+}
+
+/* Nagłówek */
+
+header {
+  height: 40vh;
+  background-image: url("car.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header h1 {
+  font-size: 8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  text-align: center;
+  line-height: 40vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Sekcja główna */
+
+main {
+  max-width: 1440px;
+  margin: 5vh auto;
+  font-size: 0;
+}
+
+main p.description {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0 30px 40px 30px;
+  line-height: 175%;
+}
+
+main p.description::first-letter {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+main p.description::first-line {
+  font-weight: 500;
+}
+
+main div.feature {
+  display: inline-block;
+  width: calc(100% / 3);
+}
+
+main div.image {
+  height: 250px;
+  background-color: royalblue;
+  margin: 20px 30px;
+  transition: 0.3s ease;
+}
+
+main div.image:hover {
+  background-color: dodgerblue;
+  cursor: pointer;
+}
+
+main h2 {
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Stopka */
+
+footer {
+  background-color: #000;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 2.25rem;
+}
+
+footer span {
+  color: royalblue;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-right: 5px;
+}

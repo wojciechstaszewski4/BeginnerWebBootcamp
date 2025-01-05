@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(./img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header > * {
+  position: absolute;
+}
+
+header img {
+  top: 50px;
+  left: 50px;
+  width: 20%;
+}
+
+header h1 {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 25px;
+  font-size: 70px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+header a {
+  bottom: 40px;
+  right: 50px;
+}
+
+header a button {
+  font-size: 40px;
+  font-weight: 500;
+  padding: 15px 45px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: white;
+  border: 4px solid white;
+  transition: 0.3s ease;
+}
+
+header a button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+section {
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20vh 0;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+section p::first-letter {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+section p::first-line {
+  font-weight: 500;
+}
+
+@media (max-width: 1280px) and (orientation: landscape) {
+  header img {
+    top: 40px;
+    left: 40px;
+    width: 25%;
+  }
+
+  header h1 {
+    font-size: 50px;
+  }
+
+  header a {
+    bottom: 30px;
+    right: 40px;
+  }
+
+  header a button {
+    font-size: 30px;
+    padding: 10px 40px;
+  }
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+  header img {
+    top: 30px;
+    left: 30px;
+    width: 30%;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  header a {
+    bottom: 20px;
+    right: 30px;
+  }
+
+  header a button {
+    font-size: 18px;
+    padding: 10px 35px;
+  }
+
+  section p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 533px) and (orientation: landscape) {
+  header img {
+    top: 20px;
+    left: 20px;
+    width: 35%;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  header a {
+    bottom: 10px;
+    right: 20px;
+  }
+
+  header a button {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 314px) and (orientation: landscape) {
+  header img {
+    top: 15px;
+    left: 15px;
+    width: 35%;
+  }
+
+  header h1 {
+    font-size: 16px;
+  }
+
+  header a {
+    bottom: 10px;
+    right: 15px;
+  }
+
+  header a button {
+    font-size: 10px;
+    padding: 5px 20px;
+  }
+}
+
+@media (max-width: 1440px) and (orientation: portrait) {
+  header img {
+    width: 25%;
+  }
+
+  header h1 {
+    font-size: 60px;
+    line-height: 175%;
+  }
+
+  header a {
+    bottom: 30px;
+    right: 40px;
+  }
+
+  header a button {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1280px) and (orientation: portrait) {
+  header img {
+    width: 30%;
+  }
+
+  header h1 {
+    font-size: 60px;
+    line-height: 200%;
+  }
+
+  header a {
+    bottom: 30px;
+    right: 40px;
+  }
+
+  header a button {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 812px) and (orientation: portrait) {
+  header img {
+    width: 40%;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  header a {
+    bottom: 30px;
+    right: 40px;
+  }
+
+  header a button {
+    font-size: 30px;
+  }
+
+  section p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 533px) and (orientation: portrait) {
+  header img {
+    width: 45%;
+    top: 30px;
+    left: 30px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  header a {
+    bottom: 30px;
+    right: 40px;
+  }
+
+  header a button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 314px) and (orientation: portrait) {
+  header img {
+    width: 50%;
+    top: 20px;
+    left: 20px;
+  }
+
+  header h1 {
+    font-size: 10px;
+  }
+
+  header a {
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  header a button {
+    font-size: 8px;
+  }
+}

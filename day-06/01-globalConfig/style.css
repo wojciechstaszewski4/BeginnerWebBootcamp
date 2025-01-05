@@ -1,0 +1,13 @@
+/* Reset styli */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Określenie właściwości globalnych */
+html {
+  font-family: "Saira", Arial, Helvetica, sans-serif; /* Główny font to zaimportowana Saira, z zapasowymi w razie problemów z wczytaniem. */
+  font-size: 10px; /* Ułatwia stosowanie jednostek rem w innych elementach. */
+  color: #ddd; /* Zmiana domyślnego koloru tekstu na jasny szary. */
+}

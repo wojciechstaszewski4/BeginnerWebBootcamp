@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Do 359px: */
+
+p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  transition: 0.2s linear;
+}
+
+/* Od 360px: */
+
+@media (min-width: 360px) {
+  p {
+    font-size: 25px;
+    color: #a31a1a;
+  }
+}
+
+@media (min-width: 400px) {
+  p {
+    font-size: 30px;
+    color: #4b0082;
+  }
+}
+
+@media (min-width: 600px) {
+  p {
+    font-size: 45px;
+    color: #2f4f4f;
+  }
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: 55px;
+    color: #2f4f4f;
+  }
+}
+
+@media (min-width: 1440px) {
+  p {
+    font-size: 85px;
+    color: #2f4f4f;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    background-color: #ffb6c1;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    background-color: #f3e5f5;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+  body {
+    background-color: #c1e1e3;
+  }
+}

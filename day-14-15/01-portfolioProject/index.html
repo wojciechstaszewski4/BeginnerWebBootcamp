@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html lang="pl-PL">
+  <head>
+    <!-- Basic settings: -->
+    <meta charset="UTF-8" />
+    <title>Wojtek | Junior Web Developer</title>
+    <meta
+      name="author"
+      content="Wojtek Staszewski, wojciechstaszewski4@gmail.com"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Cześć! Jestem Wojtek – Junior Web Developer. Witaj w moim portfolio – mam nadzieję, że znajdziesz tu coś inspirującego!"
+    />
+    <meta
+      name="keywords"
+      content="Wojciech Staszewski, Wojtek Staszewski, Junior Web Developer, portfolio web developer, strony internetowe, tworzenie stron, web development, projekty IT, JavaScript, jQuery, PHP, CSS3, HTML5, Canvas, Bootstrap, programowanie front-end, programowanie back-end"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Stylesheets: -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+    <link rel="stylesheet" href="js/dist/css/lightbox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JS scripts:-->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="js/dist/js/lightbox.min.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/mobile.js" defer></script>
+    <script src="js/calculator.js" defer></script>
+    <script src="js/comments.js" defer></script>
+    <script src="js/datetime.js" defer></script>
+    <script src="js/station.js" defer></script>
+
+    <!-- Open graph: -->
+    <meta name="url" content="https://www.wojciechstaszewski.pl" />
+    <meta property="og:title" content="Wojtek | Junior Web Developer" />
+    <meta
+      property="og:description"
+      content="Cześć! Jestem Wojtek – Junior Web Developer. Witaj w moim portfolio – mam nadzieję, że znajdziesz tu coś inspirującego!"
+    />
+    <meta
+      property="og:image"
+      content="https://www.wojciechstaszewski.pl/img/portfolio-thumbnail.png"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="pl_PL" />
+
+    <!-- Twitter cards: -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Wojtek | Junior Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Cześć! Jestem Wojtek – Junior Web Developer. Witaj w moim portfolio – mam nadzieję, że znajdziesz tu coś inspirującego!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.wojciechstaszewski.pl/img/portfolio-thumbnail.png"
+    />
+    <meta name="twitter:site" content="@wstaszewski4" />
+    <meta name="twitter:creator" content="@wstaszewski4" />
+  </head>
+
+  <body>
+    <!-- Header: social contacts, welcome message, photo -->
+    <header id="first">
+      <div class="socials clearfix fade-in">
+        <div class="social">
+          <a
+            target="_blank"
+            href="https://github.com/wojciechstaszewski4"
+            aria-label="GitHub"
+          >
+            <img class="miniature" src="img/contact1.png" alt="GitHub" />
+          </a>
+        </div>
+
+        <div class="social">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/wojciechstaszewski"
+            aria-label="Linkedin"
+          >
+            <img class="miniature" src="img/contact2.png" alt="Linkedin" />
+          </a>
+        </div>
+      </div>
+
+      <div class="welcome fade-in">
+        <p>Cześć!</p>
+        <h1>Jestem Wojtek,</h1>
+        <h2>Junior Web Developer</h2>
+
+        <button onclick="smoothScroll (document.getElementById ('second'), 35)">
+          Odkryj moje portfolio
+        </button>
+      </div>
+
+      <img
+        class="photo fade-in"
+        src="img/photo1.png"
+        alt="Zdjęcie Wojciech Staszewski"
+        aria-label="Zdjęcie Wojciech Staszewski"
+      />
+    </header>
+
+    <!-- Services description and features: modern websites, SEO, responsiveness -->
+    <section class="features clearfix fade-in" id="second">
+      <h1 class="title">Tworzę strony dostosowane do Twoich potrzeb</h1>
+
+      <div class="feature">
+        <img src="img/services1.png" alt="Języki internetowe" />
+
+        <h2>Nowoczesność i technologia na pierwszym miejscu</h2>
+        <p class="description">
+          W swoich projektach łączę nowoczesny design z zaawansowanymi
+          technologiami, tworząc strony zgodne z najnowszymi standardami
+          branżowymi. Moje strony są w pełni funkcjonalne i przyszłościowe,
+          odzwierciedlając aktualne trendy i potrzeby użytkowników. Dbałość o
+          estetykę i solidne podstawy kodu sprawiają, że moje projekty
+          wyróżniają się na tle konkurencji, oferując niezawodne rozwiązania w
+          dynamicznie zmieniającym się świecie technologii.
+        </p>
+      </div>
+
+      <div class="feature">
+        <img src="img/services2.png" alt="Wyszukiwarka Google" />
+
+        <h2>Strony internetowe, które zajmują czołowe miejsca</h2>
+        <p class="description">
+          Dobra strona to nie tylko piękny wygląd – to także strategia, która
+          przyciąga użytkowników. W mojej pracy stawiam na optymalizację SEO,
+          zapewniając lepsze pozycje w wyszukiwarkach dzięki odpowiedniej
+          strukturze, metaopisom i szybkości działania. Każda realizacja jest
+          dopasowana do potrzeb klienta i grupy docelowej, generując realne
+          korzyści i zwiększając zaangażowanie użytkowników. Strony, które
+          tworzę, wspierają rozwój biznesów, oferując nie tylko estetykę, ale i
+          skuteczność.
+        </p>
+      </div>
+
+      <div class="feature">
+        <img src="img/services3.png" alt="Urządzenia mobilne" />
+
+        <h2>Doskonałe doświadczenie na każdym urządzeniu</h2>
+        <p class="description">
+          Responsywność to podstawa moich projektów. Każda strona, którą tworzę,
+          dostosowuje się do różnych ekranów, od smartfonów po komputery,
+          oferując intuicyjne i wygodne doświadczenie użytkownikom. Dbam o
+          przejrzystość treści, łatwość nawigacji i szybkość ładowania, co
+          sprawia, że Twoja strona jest dostępna dla każdego, niezależnie od
+          urządzenia, z którego korzysta. Dzięki temu projekty, które realizuję,
+          są gotowe na wyzwania współczesnego świata mobilnego.
+        </p>
+      </div>
+    </section>
+
+    <!-- My projects: Restaurant, Snake, IT Exams, Ferrari -->
+    <section class="portfolio">
+      <h1 class="title">Projekty – moje osiągnięcia w praktyce</h1>
+
+      <div class="project project1 clearfix">
+        <div class="web">
+          <a
+            data-lightbox="www"
+            data-title="Restauracja"
+            href="img/portfolio1.png"
+            ><img src="img/portfolio1.png" alt="Restauracja"
+          /></a>
+        </div>
+
+        <div class="about">
+          <h2>Restauracja</h2>
+          <p>
+            Strona restauracji to wszechstronne źródło informacji, oferujące
+            obszerny przegląd menu, prezentację zespołu restauracyjnego,
+            fascynującą historię obiektu oraz ułatwiony dostęp do danych
+            kontaktowych i dokładnej lokalizacji, zapewniając kompleksowe i
+            wygodne doświadczenie dla gości.
+          </p>
+        </div>
+      </div>
+
+      <div class="project project2 clearfix">
+        <div class="web">
+          <a data-lightbox="www" data-title="Snake" href="img/portfolio2.png"
+            ><img src="img/portfolio2.png" alt="Snake"
+          /></a>
+        </div>
+
+        <div class="about">
+          <h2>Snake</h2>
+          <p>
+            Projekt gry Snake stworzony w języku JavaScript z wykorzystaniem
+            Canvas to emocjonujące doświadczenie, gdzie gracze kontrolują węża,
+            zbierając pożywienie i unikając kolizji. Celem gry jest zdobycie jak
+            największej liczby punktów, a prostota rozgrywki i dynamiczna akcja
+            zapewniają niezwykle wciągającą zabawę.
+          </p>
+        </div>
+      </div>
+
+      <div class="project project3 clearfix">
+        <div class="web">
+          <a
+            data-lightbox="www"
+            data-title="ITechnician - Exams"
+            href="img/portfolio3.png"
+            ><img src="img/portfolio3.png" alt="ITechnician - Exams"
+          /></a>
+        </div>
+
+        <div class="about">
+          <h2>ITechnician - Exams</h2>
+          <p>
+            Ta strona to swoista baza danych, zawierające arkusze stron
+            internetowych w HTML, JS i PHP wraz z SQL, które przygotowują do
+            egzaminu zawodowego EE.09/E.14 oraz różnorodne ćwiczenia i zadania z
+            języka JavaScript. Materiały zostały stworzone przy okazji własnej
+            nauki do egzaminu zawodowego.
+          </p>
+        </div>
+      </div>
+
+      <div class="project project4 clearfix">
+        <div class="web">
+          <a
+            data-lightbox="www"
+            data-title="FERRARI - The Power Of Dreams"
+            href="img/portfolio4.png"
+            ><img src="img/portfolio4.png" alt="FERRARI - The Power Of Dreams"
+          /></a>
+        </div>
+
+        <div class="about">
+          <h2>FERRARI - The Power Of Dreams</h2>
+          <p>
+            Strona przedstawia fascynującą historię początków Ferrari i moją
+            historię, bo jest to moja pierwsza autorska strona internetowa.
+            Twórca Ferrari wierzył w nieustanne dążenie do perfekcji i zwycięstw
+            na torze. Strona zawiera również informacje o ikonicznych modelach
+            pojazdów, usługach serwisowych i pasji, która ciągle popycha Ferrari
+            do przodu.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Examples: calculator and gas station -->
+    <section class="examples">
+      <h1 class="text">Pierwsze wyzwania i sukcesy</h1>
+
+      <div class="example exampleCalculations">
+        <div class="exampleCalculations-header">
+          <img src="img/banner.png" alt="Proste działania – baner" />
+        </div>
+
+        <div class="exampleCalculations-main">
+          <h3 class="title1">Proste Działania</h3>
+
+          <p>
+            <em>Podaj pierwszą liczbę: &nbsp;</em>
+            <input type="number" id="num1" placeholder="Liczba 1" />
+          </p>
+
+          <p>
+            <em>Podaj drugą liczbę: &nbsp;</em>
+            <input type="number" id="num2" placeholder="Liczba 2" />
+          </p>
+
+          <p>
+            <button onclick="calculate(1)">Dodawanie</button>
+            <button onclick="calculate(2)">Odejmowanie</button>
+            <button onclick="calculate(3)">Mnożenie</button>
+            <button onclick="calculate(4)">Dzielenie</button>
+          </p>
+
+          <output id="output" aria-live="polite"></output>
+        </div>
+      </div>
+
+      <div class="example exampleStation">
+        <div id="left">
+          <h2 class="title2">Stacja Paliw</h2>
+        </div>
+
+        <div id="right">
+          <img src="img/home.png" alt="Stacja paliw – sklep" />
+          <img src="img/sign.png" alt="Stacja paliw – znak" />
+        </div>
+
+        <div id="center">
+          <h3 class="title3">Oblicz Koszt Paliwa</h3>
+
+          <p>
+            <em>Rodzaj paliwa (1 - Benzyna, 2 - Olej napędowy):</em>
+            <input type="number" id="number1" placeholder="Wpisz 1 lub 2" />
+          </p>
+
+          <p>
+            <em>Ile litrów?:</em>
+            <input
+              type="number"
+              id="number2"
+              placeholder="Podaj ilość litrów"
+            />
+          </p>
+
+          <p>
+            <button onclick="fuelCost()">Oblicz</button>
+          </p>
+
+          <div id="result" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div class="forwarding">
+        <button
+          onclick="window.open('https://wojciechstaszewski4.github.io/ITechnicianExams/index1.html', '_blank')"
+          class="forward"
+        >
+          Zobacz więcej
+        </button>
+      </div>
+    </section>
+
+    <!-- Motto: inspirational quotes -->
+    <section class="slogan">
+      <div id="motto1" class="transition-div">
+        <h1 class="title1">Słowa, które mnie inspirują</h1>
+        <p class="text">
+          "Wszystko, czego się dotąd nauczyłeś, zatraci sens, jeśli nie
+          potrafisz znaleźć zastosowania dla tej wiedzy."
+        </p>
+        <p class="author">– Paulo Coelho</p>
+      </div>
+
+      <div id="motto2" class="transition-div">
+        <h1 class="title2">Słowa, które mnie inspirują</h1>
+        <p class="text">
+          "Nie bój się porażek. Każda z nich jest krokiem w stronę sukcesu."
+        </p>
+        <p class="author">– Thomas Edison</p>
+      </div>
+
+      <div id="motto3" class="transition-div">
+        <h1 class="title3">Słowa, które mnie inspirują</h1>
+        <p class="text">"Jest tylko jeden sposób nauki. Poprzez działanie."</p>
+        <p class="author">– Paulo Coelho</p>
+      </div>
+    </section>
+
+    <!-- Hobby: my interests -->
+    <section class="hobby clearfix">
+      <div class="hobbytext">
+        <h1 class="title">Moje pasje i zainteresowania</h1>
+      </div>
+
+      <div class="item">
+        <p>Gra na gitarze</p>
+      </div>
+
+      <div class="item">
+        <p>Podróżowanie</p>
+      </div>
+
+      <div class="item">
+        <p>Naprawa elektroniki</p>
+      </div>
+
+      <div class="item">
+        <p>Programowanie</p>
+      </div>
+    </section>
+
+    <!-- Contact: contact form and details -->
+    <section class="contact">
+      <h1 class="title">Masz pytania? Skontaktuj się!</h1>
+
+      <div class="wrap clearfix">
+        <form id="commentForm">
+          <input
+            type="text"
+            name="name"
+            placeholder="Twoje imię"
+            required
+            pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ\s]+"
+            title="Wprowadź poprawne imię"
+            autocomplete="name"
+            aria-label="Podaj swoje imię"
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            required
+            title="Wprowadź poprawny adres e-mail"
+            autocomplete="email"
+            aria-label="Podaj swój adres e-mail"
+          />
+
+          <textarea
+            name="comment"
+            placeholder="Twój komentarz"
+            required
+            title="Wprowadź treść komentarza"
+            autocomplete="off"
+            aria-label="Wpisz swój komentarz"
+          ></textarea>
+
+          <button type="submit">Wyślij komentarz</button>
+        </form>
+
+        <div class="socials">
+          <div class="social clearfix">
+            <a
+              href="mailto:wojciechstaszewski4@gmail.com"
+              aria-label="Wyślij wiadomość e-mail"
+            >
+              <img src="img/contact3.png" alt="Poczta" />
+            </a>
+            <span>wojciechstaszewski4@gmail.com</span>
+          </div>
+
+          <div class="social clearfix">
+            <a href="tel:+48723962346" aria-label="Zadzwoń pod mój numer">
+              <img src="img/contact4.png" alt="Telefon" />
+            </a>
+            <span>+48 723 962 346</span>
+          </div>
+
+          <div class="social clearfix">
+            <a target="_blank" href="cv-en.pdf" aria-label="Otwórz moje CV">
+              <img src="img/contact5.png" alt="CV" />
+            </a>
+            <span>Otwórz CV</span>
+          </div>
+
+          <div class="social clearfix">
+            <a
+              target="_blank"
+              href="https://github.com/wojciechstaszewski4"
+              aria-label="Odwiedź mój profil na GitHubie"
+            >
+              <img src="img/contact1.png" alt="GitHub" />
+            </a>
+            <span>wojciechstaszewski4</span>
+          </div>
+
+          <div class="social clearfix">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/wojciechstaszewski"
+              aria-label="Odwiedź mój profil na Linkedin"
+            >
+              <img src="img/contact2.png" alt="Linkedin" />
+            </a>
+            <span>wojciechstaszewski</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comments: displaying user comments -->
+    <section class="commentsSection clearfix fade-in">
+      <h1 class="title">Co mówią o mnie inni</h1>
+      <p class="no-comments">Brak komentarzy – bądź pierwszy!</p>
+      <p class="error-comments">Coś poszło nie tak! Odśwież stronę.</p>
+      <div id="comments"></div>
+    </section>
+
+    <!-- Footer: date, time, copyright -->
+    <footer class="footer">
+      <div class="left">
+        <h3 class="date">Dziś jest:</h3>
+        <div id="datetime" aria-live="polite"></div>
+      </div>
+
+      <div class="center">
+        <img
+          class="logo"
+          src="img/photo2.png"
+          onclick="smoothScroll(document.getElementById('first'), 95)"
+          alt="Powrót na górę strony"
+          aria-label="Powrót na górę strony"
+        />
+      </div>
+
+      <div class="right">
+        <h3 class="author">
+          <span>&copy; 2025</span> Wszelkie prawa zastrzeżone
+        </h3>
+      </div>
+    </footer>
+
+    <div id="refresh-overlay"></div>
+  </body>
+</html>

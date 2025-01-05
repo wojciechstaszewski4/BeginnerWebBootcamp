@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 300vh;
+}
+
+header {
+  position: relative;
+  height: 80vh;
+  background-image: url("city.jpg");
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 20px 0;
+  font-size: 80px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+section {
+  width: 80%;
+  margin: 100px auto;
+}
+
+section p {
+  line-height: 1.75;
+  font-size: 18px;
+  text-align: justify;
+}
+
+section p::first-letter {
+  font-size: 28px;
+  font-weight: bold;
+}

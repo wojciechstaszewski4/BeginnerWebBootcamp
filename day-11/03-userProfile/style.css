@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  max-width: 1280px;
+  margin: 5vh auto;
+}
+
+.header p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.header p::first-letter {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.profile {
+  position: relative;
+  background-color: #ddd;
+  width: 800px;
+  height: 200px;
+  margin: 50px auto;
+  border-radius: 50px;
+}
+
+.avatar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+}
+
+.answer {
+  position: absolute;
+  top: 20px;
+  left: 220px;
+  padding-right: 20px;
+}
+
+.name {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.sentence {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.sentence::first-letter {
+  font-size: 24px;
+  font-weight: bold;
+}
