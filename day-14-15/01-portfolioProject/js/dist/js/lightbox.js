@@ -40,7 +40,7 @@
   // Descriptions of all options available on the demo site:
   // http://lokeshdhakar.com/projects/lightbox2/index.html#options
   Lightbox.defaults = {
-    albumLabel: "Zdjęcie %1 z %2",
+    albumLabel: "Projekt %1 z %2",
     alwaysShowNavOnTouchDevices: false,
     fadeDuration: 600,
     fitImagesInViewport: true,
