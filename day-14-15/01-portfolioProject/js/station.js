@@ -1,5 +1,4 @@
-// Calculates fuel cost based on type and amount, with input validation:
-
+// Calculates fuel cost based on type and amount, with input validation
 function fuelCost() {
   const fuelType = document.getElementById("number1").value;
   const fuelAmount = parseFloat(document.getElementById("number2").value);

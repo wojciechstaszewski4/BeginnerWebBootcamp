@@ -1,5 +1,5 @@
 /*!
- * Lightbox v2.11.4
+ * Lightbox v2.11.5
  * by Lokesh Dhakar
  *
  * More info:
@@ -40,7 +40,7 @@
   // Descriptions of all options available on the demo site:
   // http://lokeshdhakar.com/projects/lightbox2/index.html#options
   Lightbox.defaults = {
-    albumLabel: "Projekt %1 z %2",
+    albumLabel: "Zdjęcie %1 z %2",
     alwaysShowNavOnTouchDevices: false,
     fadeDuration: 600,
     fitImagesInViewport: true,
@@ -92,7 +92,7 @@
       function (event) {
         self.start($(event.currentTarget));
         return false;
-      }
+      },
     );
   };
 
@@ -111,13 +111,13 @@
     // while Lightbox is opened will keep the focus on or inside one of these
     // two elements.
     //
-    // We do this so we can prevent propogation of the Esc keypress when
-    // Lightbox is open. This prevents it from intefering with other components
+    // We do this so we can prevent propagation of the Esc keypress when
+    // Lightbox is open. This prevents it from interfering with other components
     // on the page below.
     //
     // Github issue: https://github.com/lokesh/lightbox2/issues/663
     $(
-      '<div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay"></div><div id="lightbox" tabindex="-1" class="lightbox"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""/><div class="lb-nav"><a class="lb-prev" role="button" tabindex="0" aria-label="Previous image" href="" ></a><a class="lb-next" role="button" tabindex="0" aria-label="Next image" href="" ></a></div><div class="lb-loader"><a class="lb-cancel" role="button" tabindex="0"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close" role="button" tabindex="0"></a></div></div></div></div>'
+      '<div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay"></div><div id="lightbox" tabindex="-1" class="lightbox"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""/><div class="lb-nav"><a class="lb-prev" role="button" tabindex="0" aria-label="Previous image" href="" ></a><a class="lb-next" role="button" tabindex="0" aria-label="Next image" href="" ></a></div><div class="lb-loader"><a class="lb-cancel" role="button" tabindex="0"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close" role="button" tabindex="0"></a></div></div></div></div>',
     ).appendTo($("body"));
 
     // Cache jQuery objects
@@ -202,7 +202,7 @@
             function () {
               this.$nav.css("pointer-events", "auto");
             }.bind(self),
-            0
+            0,
           );
         });
       }
@@ -248,7 +248,7 @@
 
     if (dataLightboxValue) {
       $links = $(
-        $link.prop("tagName") + '[data-lightbox="' + dataLightboxValue + '"]'
+        $link.prop("tagName") + '[data-lightbox="' + dataLightboxValue + '"]',
       );
       for (var i = 0; i < $links.length; i = ++i) {
         addToAlbum($($links[i]));
@@ -305,7 +305,7 @@
     $(".lb-loader").fadeIn("slow");
     this.$lightbox
       .find(
-        ".lb-image, .lb-nav, .lb-prev, .lb-next, .lb-dataContainer, .lb-numbers, .lb-caption"
+        ".lb-image, .lb-nav, .lb-prev, .lb-next, .lb-dataContainer, .lb-numbers, .lb-caption",
       )
       .hide();
     this.$outerContainer.addClass("animating");
@@ -402,7 +402,7 @@
             imageWidth = maxImageWidth;
             imageHeight = parseInt(
               preloader.height / (preloader.width / imageWidth),
-              10
+              10,
             );
             $image.width(imageWidth);
             $image.height(imageHeight);
@@ -410,7 +410,7 @@
             imageHeight = maxImageHeight;
             imageWidth = parseInt(
               preloader.width / (preloader.height / imageHeight),
-              10
+              10,
             );
             $image.width(imageWidth);
             $image.height(imageHeight);
@@ -482,7 +482,7 @@
         "swing",
         function () {
           postResize();
-        }
+        },
       );
     } else {
       postResize();
@@ -558,7 +558,7 @@
     if (this.album.length > 1 && this.options.showImageNumberLabel) {
       var labelText = this.imageCountLabel(
         this.currentImageIndex + 1,
-        this.album.length
+        this.album.length,
       );
       this.$lightbox.find(".lb-number").text(labelText).fadeIn("fast");
     } else {

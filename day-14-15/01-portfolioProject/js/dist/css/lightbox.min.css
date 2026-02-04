@@ -2,8 +2,6 @@
 .lightbox {
   text-align: center;
   line-height: 0;
-  position: absolute;
-  left: 0;
 }
 
 body.lb-disable-scrolling {
@@ -16,12 +14,13 @@ body.lb-disable-scrolling {
   left: 0;
   z-index: 9999;
   background-color: #000;
-  filter: alpha(Opacity=80);
   opacity: 0.8;
   display: none;
 }
 
 .lightbox {
+  position: absolute;
+  left: 0;
   width: 100%;
   z-index: 10000;
   font-weight: 400;
@@ -50,6 +49,12 @@ body.lb-disable-scrolling {
   background-color: #fff;
 }
 
+.lb-loader,
+.lb-nav {
+  position: absolute;
+  left: 0;
+}
+
 .lb-outerContainer:after {
   content: "";
   display: table;
@@ -71,9 +76,7 @@ body.lb-disable-scrolling {
 }
 
 .lb-nav {
-  position: absolute;
   top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
   z-index: 10;
@@ -100,7 +103,6 @@ body.lb-disable-scrolling {
   left: 0;
   float: left;
   background: url(../img/prev.png) left 48% no-repeat;
-  filter: alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
   -moz-transition: opacity 0.6s;
@@ -109,7 +111,6 @@ body.lb-disable-scrolling {
 }
 
 .lb-nav a.lb-prev:hover {
-  filter: alpha(Opacity=100);
   opacity: 1;
 }
 
@@ -118,7 +119,6 @@ body.lb-disable-scrolling {
   right: 0;
   float: right;
   background: url(../img/next.png) right 48% no-repeat;
-  filter: alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
   -moz-transition: opacity 0.6s;
@@ -127,7 +127,6 @@ body.lb-disable-scrolling {
 }
 
 .lb-nav a.lb-next:hover {
-  filter: alpha(Opacity=100);
   opacity: 1;
 }
 
@@ -183,7 +182,6 @@ body.lb-disable-scrolling {
   background: url(../img/close.png) top right no-repeat;
   text-align: right;
   outline: 0;
-  filter: alpha(Opacity=70);
   opacity: 0.7;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
@@ -193,6 +191,5 @@ body.lb-disable-scrolling {
 
 .lb-data .lb-close:hover {
   cursor: pointer;
-  filter: alpha(Opacity=100);
   opacity: 1;
 }

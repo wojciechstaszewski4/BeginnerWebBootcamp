@@ -1,5 +1,4 @@
-// Temporarily adds and removes the "active" class with a custom timeout for mobile devices:
-
+// Temporarily adds and removes the "active" class with a custom timeout for mobile devices
 function addTemporaryActiveEffect(selector, timeout = 1000) {
   document.querySelectorAll(selector).forEach((element) => {
     addHoverListeners(element, timeout);

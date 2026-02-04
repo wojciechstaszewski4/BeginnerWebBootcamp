@@ -1,48 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="pl-PL">
   <head>
-    <!-- Basic settings: -->
+    <!-- Podstawowe meta tagi -->
     <meta charset="UTF-8" />
-    <title>Wojtek | Junior Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <title>Wojtek | Web Developer</title>
     <meta
       name="author"
       content="Wojtek Staszewski, wojciechstaszewski4@gmail.com"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="format-detection" content="telephone=no" />
-    <meta name="robots" content="index, follow" />
+
+    <!-- Kolor belki systemowej / PWA -->
+    <meta name="theme-color" content="#29a6dc" />
+
+    <!-- SEO -->
+    <title>Wojtek | Web Developer</title>
     <meta
       name="description"
-      content="Cześć! Jestem Wojtek – Junior Web Developer. Witaj w moim portfolio – mam nadzieję, że znajdziesz tu coś inspirującego!"
+      content="Cześć! Jestem Wojtek - Web Developer. Witaj w moim portfolio - mam nadzieję, że znajdziesz tu coś inspirującego!"
+    />
+
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:title" content="Wojtek | Web Developer" />
+    <meta
+      property="og:description"
+      content="Cześć! Jestem Wojtek - Web Developer. Witaj w moim portfolio - mam nadzieję, że znajdziesz tu coś inspirującego!"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:url" content="https://www.wojciechstaszewski.pl" />
+    <meta
+      property="og:image"
+      content="https://www.wojciechstaszewski.pl/img/portfolio-thumbnail.png"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Wojtek | Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Cześć! Jestem Wojtek - Web Developer. Witaj w moim portfolio - mam nadzieję, że znajdziesz tu coś inspirującego!"
     />
     <meta
-      name="keywords"
-      content="Wojciech Staszewski, Wojtek Staszewski, Junior Web Developer, portfolio web developer, strony internetowe, tworzenie stron, web development, projekty IT, JavaScript, jQuery, PHP, CSS3, HTML5, Canvas, Bootstrap, programowanie front-end, programowanie back-end"
+      name="twitter:image"
+      content="https://www.wojciechstaszewski.pl/img/portfolio-thumbnail.png"
     />
+
+    <!-- Favicon dla przeglądarek -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png" />
+
+    <!-- Apple iOS -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+
+    <!-- Android / PWA -->
+    <link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="img/icon-512.png" />
+
+    <!-- Czcionki -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Stylesheets: -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
     />
-    <link rel="stylesheet" href="js/dist/css/lightbox.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
-    <link rel="icon" href="img/favicon.png" />
+
+    <!-- Arkusze styli: -->
+    <link rel="stylesheet" href="js/dist/css/lightbox.min.css" />
     <link rel="stylesheet" href="style.css" />
 
-    <!-- JS scripts:-->
+    <!-- Skrypty:-->
     <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      src="https://code.jquery.com/jquery-4.0.0.min.js"
+      integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
       crossorigin="anonymous"
-      defer
     ></script>
     <script src="js/dist/js/lightbox.min.js" defer></script>
     <script src="js/animations.js" defer></script>
@@ -51,34 +93,6 @@
     <script src="js/comments.js" defer></script>
     <script src="js/datetime.js" defer></script>
     <script src="js/station.js" defer></script>
-
-    <!-- Open graph: -->
-    <meta name="url" content="https://www.wojciechstaszewski.pl" />
-    <meta property="og:title" content="Wojtek | Junior Web Developer" />
-    <meta
-      property="og:description"
-      content="Cześć! Jestem Wojtek – Junior Web Developer. Witaj w moim portfolio – mam nadzieję, że znajdziesz tu coś inspirującego!"
-    />
-    <meta
-      property="og:image"
-      content="https://www.wojciechstaszewski.pl/img/portfolio-thumbnail.png"
-    />
-    <meta property="og:type" content="article" />
-    <meta property="og:locale" content="pl_PL" />
-
-    <!-- Twitter cards: -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Wojtek | Junior Web Developer" />
-    <meta
-      name="twitter:description"
-      content="Cześć! Jestem Wojtek – Junior Web Developer. Witaj w moim portfolio – mam nadzieję, że znajdziesz tu coś inspirującego!"
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.wojciechstaszewski.pl/img/portfolio-thumbnail.png"
-    />
-    <meta name="twitter:site" content="@wstaszewski4" />
-    <meta name="twitter:creator" content="@wstaszewski4" />
   </head>
 
   <body>
@@ -109,9 +123,9 @@
       <div class="welcome fade-in">
         <p>Cześć!</p>
         <h1>Jestem Wojtek,</h1>
-        <h2>Junior Web Developer</h2>
+        <h2>Web Developer</h2>
 
-        <button onclick="smoothScroll (document.getElementById ('second'), 35)">
+        <button onclick="smoothScroll(document.getElementById('second'), 35)">
           Odkryj moje portfolio
         </button>
       </div>
@@ -148,7 +162,7 @@
 
         <h2>Strony internetowe, które zajmują czołowe miejsca</h2>
         <p class="description">
-          Dobra strona to nie tylko piękny wygląd – to także strategia, która
+          Dobra strona to nie tylko piękny wygląd - to także strategia, która
           przyciąga użytkowników. W mojej pracy stawiam na optymalizację SEO,
           zapewniając lepsze pozycje w wyszukiwarkach dzięki odpowiedniej
           strukturze, metaopisom i szybkości działania. Każda realizacja jest
@@ -175,17 +189,39 @@
       </div>
     </section>
 
-    <!-- My projects: Restaurant, Snake, IT Exams, Ferrari -->
+    <!-- My projects: InvestEdu, Restaurant, Snake, IT Exams, Ferrari -->
     <section class="portfolio">
-      <h1 class="title">Projekty – moje osiągnięcia w praktyce</h1>
+      <h1 class="title">Projekty - moje osiągnięcia w praktyce</h1>
 
       <div class="project project1 clearfix">
         <div class="web">
           <a
             data-lightbox="www"
-            data-title="Restauracja"
+            data-title="InvestEdu"
             href="img/portfolio1.png"
-            ><img src="img/portfolio1.png" alt="Restauracja"
+            ><img src="img/portfolio1.png" alt="InvestEdu"
+          /></a>
+        </div>
+
+        <div class="about">
+          <h2>InvestEdu</h2>
+          <p>
+            InvestEdu to interaktywna aplikacja webowa stworzona w celu nauki
+            podstaw inwestowania w przystępnej i angażującej formie. Projekt
+            oferuje logicznie uporządkowane treści edukacyjne, quizy
+            sprawdzające wiedzę oraz elementy grywalizacji, które wspierają
+            proces nauki.
+          </p>
+        </div>
+      </div>
+
+      <div class="project project2 clearfix">
+        <div class="web">
+          <a
+            data-lightbox="www"
+            data-title="Restauracja"
+            href="img/portfolio2.png"
+            ><img src="img/portfolio2.png" alt="Restauracja"
           /></a>
         </div>
 
@@ -201,10 +237,10 @@
         </div>
       </div>
 
-      <div class="project project2 clearfix">
+      <div class="project project3 clearfix">
         <div class="web">
-          <a data-lightbox="www" data-title="Snake" href="img/portfolio2.png"
-            ><img src="img/portfolio2.png" alt="Snake"
+          <a data-lightbox="www" data-title="Snake" href="img/portfolio3.png"
+            ><img src="img/portfolio3.png" alt="Snake"
           /></a>
         </div>
 
@@ -220,13 +256,13 @@
         </div>
       </div>
 
-      <div class="project project3 clearfix">
+      <div class="project project4 clearfix">
         <div class="web">
           <a
             data-lightbox="www"
             data-title="ITechnician - Exams"
-            href="img/portfolio3.png"
-            ><img src="img/portfolio3.png" alt="ITechnician - Exams"
+            href="img/portfolio4.png"
+            ><img src="img/portfolio4.png" alt="ITechnician - Exams"
           /></a>
         </div>
 
@@ -242,13 +278,13 @@
         </div>
       </div>
 
-      <div class="project project4 clearfix">
+      <div class="project project5 clearfix">
         <div class="web">
           <a
             data-lightbox="www"
             data-title="FERRARI - The Power Of Dreams"
-            href="img/portfolio4.png"
-            ><img src="img/portfolio4.png" alt="FERRARI - The Power Of Dreams"
+            href="img/portfolio5.png"
+            ><img src="img/portfolio5.png" alt="FERRARI - The Power Of Dreams"
           /></a>
         </div>
 
@@ -272,7 +308,7 @@
 
       <div class="example exampleCalculations">
         <div class="exampleCalculations-header">
-          <img src="img/banner.png" alt="Proste działania – baner" />
+          <img src="img/banner.png" alt="Proste działania - baner" />
         </div>
 
         <div class="exampleCalculations-main">
@@ -305,8 +341,8 @@
         </div>
 
         <div id="right">
-          <img src="img/home.png" alt="Stacja paliw – sklep" />
-          <img src="img/sign.png" alt="Stacja paliw – znak" />
+          <img src="img/home.png" alt="Stacja paliw - sklep" />
+          <img src="img/sign.png" alt="Stacja paliw - znak" />
         </div>
 
         <div id="center">
@@ -336,7 +372,12 @@
 
       <div class="forwarding">
         <button
-          onclick="window.open('https://wojciechstaszewski4.github.io/ITechnicianExams/index1.html', '_blank')"
+          onclick="
+            window.open(
+              'https://wojciechstaszewski4.github.io/ITechnicianExams/index1.html',
+              '_blank',
+            )
+          "
           class="forward"
         >
           Zobacz więcej
@@ -352,7 +393,7 @@
           "Wszystko, czego się dotąd nauczyłeś, zatraci sens, jeśli nie
           potrafisz znaleźć zastosowania dla tej wiedzy."
         </p>
-        <p class="author">– Paulo Coelho</p>
+        <p class="author">- Paulo Coelho</p>
       </div>
 
       <div id="motto2" class="transition-div">
@@ -360,13 +401,13 @@
         <p class="text">
           "Nie bój się porażek. Każda z nich jest krokiem w stronę sukcesu."
         </p>
-        <p class="author">– Thomas Edison</p>
+        <p class="author">- Thomas Edison</p>
       </div>
 
       <div id="motto3" class="transition-div">
         <h1 class="title3">Słowa, które mnie inspirują</h1>
         <p class="text">"Jest tylko jeden sposób nauki. Poprzez działanie."</p>
-        <p class="author">– Paulo Coelho</p>
+        <p class="author">- Paulo Coelho</p>
       </div>
     </section>
 
@@ -485,7 +526,7 @@
     <!-- Comments: displaying user comments -->
     <section class="commentsSection clearfix fade-in">
       <h1 class="title">Co mówią o mnie inni</h1>
-      <p class="no-comments">Brak komentarzy – bądź pierwszy!</p>
+      <p class="no-comments">Brak komentarzy - bądź pierwszy!</p>
       <p class="error-comments">Coś poszło nie tak! Odśwież stronę.</p>
       <div id="comments"></div>
     </section>
@@ -501,7 +542,7 @@
         <img
           class="logo"
           src="img/photo2.png"
-          onclick="smoothScroll(document.getElementById('first'), 95)"
+          onclick="smoothScroll(document.getElementById('first'), 65)"
           alt="Powrót na górę strony"
           aria-label="Powrót na górę strony"
         />
@@ -509,7 +550,7 @@
 
       <div class="right">
         <h3 class="author">
-          <span>&copy; 2025</span> Wszelkie prawa zastrzeżone
+          <span>&copy; <span id="year"></span></span> Wszelkie prawa zastrzeżone
         </h3>
       </div>
     </footer>

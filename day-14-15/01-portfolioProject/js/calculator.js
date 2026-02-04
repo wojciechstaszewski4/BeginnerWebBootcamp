@@ -1,5 +1,4 @@
-// Performs arithmetic operations (+, -, *, /) based on user input and updates the result:
-
+// Performs arithmetic operations (+, -, *, /) based on user input and updates the result
 function calculate(operation) {
   const number1 = parseInt(document.getElementById("num1").value);
   const number2 = parseInt(document.getElementById("num2").value);

@@ -1,5 +1,4 @@
-// Handling saving comments to the database:
-
+// Handling saving comments to the database
 document
   .getElementById("commentForm")
   .addEventListener("submit", async function (event) {
@@ -46,15 +45,14 @@ document
     }
   });
 
-// Handling reading comments from the database:
-
+// Handling reading comments from the database
 async function loadComments() {
   const noComments = document.querySelector(".no-comments");
   const errorComments = document.querySelector(".error-comments");
 
   try {
     const response = await fetch(
-      `comments-read.php?timestamp=${new Date().getTime()}`
+      `comments-read.php?timestamp=${new Date().getTime()}`,
     );
 
     if (!response.ok) {
@@ -121,8 +119,7 @@ async function loadComments() {
 
 document.addEventListener("DOMContentLoaded", loadComments);
 
-// Function to calculate the time since the comment was posted:
-
+// Function to calculate the time since the comment was posted
 function getTimeAgo(dateString) {
   const date = parseDate(dateString);
 
@@ -188,8 +185,7 @@ function getTimeAgo(dateString) {
   }
 }
 
-// Parses a date string and converts it to a valid ISO format:
-
+// Parses a date string and converts it to a valid ISO format
 function parseDate(dateString) {
   if (typeof dateString !== "string") {
     console.error("Nieprawidłowy typ daty:", dateString);

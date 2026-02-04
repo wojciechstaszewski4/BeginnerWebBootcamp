@@ -1,5 +1,4 @@
-// Smooth scroll to a given section:
-
+// Smooth scroll to a given section
 window.smoothScroll = function (target, steps = 35) {
   if (!target) {
     console.error("Nie zdefiniowano elementu docelowego!");
@@ -24,14 +23,12 @@ window.smoothScroll = function (target, steps = 35) {
   scroll(scrollContainer, scrollContainer.scrollTop, targetY);
 };
 
-// Animation of the entry of projects and example sheets:
-
+// Animation of the entry of projects and example sheets
 $(document).on("scroll", function () {
   const windowHeight = $(window).height();
   const scrollValue = $(this).scrollTop();
 
-  // Projects:
-
+  // Projects
   $(".project").each(function () {
     const $element = $(this);
     const elementFromTop = $element.offset().top - 100;
@@ -42,8 +39,7 @@ $(document).on("scroll", function () {
     }
   });
 
-  // Example sheets:
-
+  // Example sheets
   $(".example").each(function () {
     const $example = $(this);
     const exampleFromTop = $example.offset().top - 500;
@@ -55,8 +51,7 @@ $(document).on("scroll", function () {
   });
 });
 
-// Typing effect for displaying text dynamically:
-
+// Typing effect for displaying text dynamically
 function typewrite(element, text) {
   element.textContent = "";
   let index = 0;
@@ -72,8 +67,7 @@ function typewrite(element, text) {
   typing();
 }
 
-// Smooth transition between slides with a typing effect for authors:
-
+// Smooth transition between slides with a typing effect for authors
 function smoothTransition() {
   const mottos = [
     document.getElementById("motto1"),
@@ -101,8 +95,7 @@ function smoothTransition() {
 
 smoothTransition();
 
-// Check if sections with the "fade-in" class are visible in the viewport:
-
+// Check if sections with the "fade-in" class are visible in the viewport
 function checkVisibility() {
   document.querySelectorAll(".fade-in").forEach((section) => {
     const rect = section.getBoundingClientRect();

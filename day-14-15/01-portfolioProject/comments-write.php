@@ -1,8 +1,8 @@
 <?php
     $servername = "localhost";
-    $username = "dm72959_admin";
+    $username = "dm80501_admin";
     $password = "Danek1234!";
-    $dbname = "dm72959_comments";
+    $dbname = "dm80501_comments";
 
     header('Content-Type: application/json; charset=utf-8');
 

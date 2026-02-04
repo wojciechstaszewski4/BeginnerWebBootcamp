@@ -1,5 +1,4 @@
-// Function to display the current date and time in a specified format:
-
+// Function to display the current date and time in a specified format
 function displayCurrentDateTime() {
   const date = new Date();
   const timeElement = document.getElementById("datetime");
@@ -15,14 +14,13 @@ function displayCurrentDateTime() {
   const formattedTime = formatTime(
     date.getHours(),
     date.getMinutes(),
-    date.getSeconds()
+    date.getSeconds(),
   );
 
   timeElement.textContent = `${dayOfMonth} ${month} ${year} ${formattedTime}`;
 }
 
-// Function to get the name of the month in Polish based on the month index:
-
+// Function to get the name of the month in Polish based on the month index
 function getPolishMonthName(monthIndex) {
   const polishMonths = [
     "Stycznia",
@@ -42,8 +40,7 @@ function getPolishMonthName(monthIndex) {
   return polishMonths[monthIndex] || "Nieznany miesiąc!";
 }
 
-// Function to format the time in HH:MM:SS format:
-
+// Function to format the time in HH:MM:SS format
 function formatTime(hours, minutes, seconds) {
   return [hours, minutes, seconds]
     .map((unit) => unit.toString().padStart(2, "0"))
@@ -54,3 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
   displayCurrentDateTime();
   setInterval(displayCurrentDateTime, 1000);
 });
+
+// Fill in the current year in the footer
+document.getElementById("year").textContent = new Date().getFullYear();
